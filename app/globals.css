@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Tema "game show" escuro com acento violeta — identidade própria */
+  --color-bg: #130b29;
+  --color-card: #20143f;
+  --color-accent: #8b5cf6; /* violeta */
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  color: #f3eefe;
+  background:
+    radial-gradient(90% 60% at 50% -10%, #3b1d6e 0%, transparent 60%),
+    var(--color-bg);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #8b5cf6;
+  color: #130b29;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
